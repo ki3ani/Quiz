@@ -37,8 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'popquiz.apps.PopquizConfig',
-    'users.apps.UsersConfig'
+    'popquiz.apps.PopquizConfig'
 ]
 
 MIDDLEWARE = [
