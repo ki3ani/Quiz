@@ -3,11 +3,15 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.views import View
 
-from .forms import RegisterForm
+from .forms import UserRegisterForm
 
 # Create your views here.
+def home(request):
+    return render(request, 'users/home.html')
+
+    
 class RegisterView(View):
-    form_class = RegisterForm
+    form_class = UserRegisterForm
     initial = {'key': 'value'}
     template_name = 'users/register.html'
 
